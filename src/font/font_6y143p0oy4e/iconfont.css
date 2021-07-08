@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1625669377172') format('truetype');
+  src: url('iconfont.ttf?t=1625749429453') format('truetype');
 }
 
 .iconfont {
@@ -11,11 +11,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-f:before {
+  content: "\e605";
+}
+
+.icon-shoujichongzhi:before {
+  content: "\e76f";
+}
+
+.icon-jianzhu:before {
+  content: "\e642";
+}
+
+.icon-time1:before {
+  content: "\e703";
+}
+
+.icon-left:before {
+  content: "\e501";
+}
+
+.icon-shoujika:before {
+  content: "\e69c";
+}
+
+.icon-qian:before {
+  content: "\e740";
+}
+
 .icon-xiaomixinLogo:before {
   content: "\e623";
 }
 
+.icon-fangdajing:before {
+  content: "\e654";
+}
+
 .icon-gouwuche:before {
   content: "\e604";
+}
+
+.icon-you:before {
+  content: "\e697";
 }
 
