@@ -1,0 +1,146 @@
+html {
+  width: 100%;
+  overflow: scroll;
+}
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: darkorange;
+}
+body {
+  width: 100%;
+}
+header {
+  background-color: #333333;
+  height: 40px;
+  text-align: center;
+  color: #424242;
+}
+header div.navbar {
+  padding: 0;
+  flex-wrap: nowrap !important;
+  line-height: 40px;
+  width: 1226px;
+}
+header a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-size: 12px;
+}
+header a:hover {
+  color: white;
+}
+header span {
+  margin: 0 0.3em;
+}
+header .nav {
+  flex-wrap: nowrap !important;
+  white-space: nowrap;
+}
+header .nav:last-of-type span {
+  margin: 0;
+}
+header .nav:last-of-type :last-of-type span:first-of-type {
+  margin: 5px;
+}
+header .nav:last-of-type :nth-of-type(3) {
+  padding: 0 10px;
+}
+header .lastone {
+  width: 120px;
+  display: block;
+  flex-shrink: 0;
+  text-align: center;
+  background-color: rgba(211, 211, 211, 0.1);
+  margin-left: 15px;
+}
+header .lastone:hover {
+  background-color: white;
+}
+header .lastone:hover a {
+  color: orange;
+}
+.icon {
+  width: 56px;
+  height: 56px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.icon:hover {
+  position: relative;
+  left: 1px;
+}
+nav > div.navbar {
+  width: 1226px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100px;
+}
+nav > div.navbar a {
+  font-size: 16px;
+}
+nav > div.navbar ul {
+  padding-top: 10px;
+}
+nav > div.navbar ul li {
+  height: 88px;
+  text-align: center;
+  padding: 26px 10px 38px;
+}
+nav > div.navbar .nav.navbar-right {
+  border: 1px #e0e0e0 solid;
+  transition: all 1s;
+}
+nav > div.navbar .nav.navbar-right:hover {
+  border: 1px black solid;
+  transition: all 1s;
+}
+nav > div.navbar .nav.navbar-right:hover > input[type='search'] {
+  border-right: 1px black solid;
+  transition: all 1s;
+}
+nav > div.navbar .nav.navbar-right:hover > input[type='submit'] {
+  background-color: darkorange;
+}
+nav > div.navbar .nav.navbar-right > input {
+  height: 50px;
+  outline: none;
+  border: none;
+}
+nav > div.navbar .nav.navbar-right > input[type='search'] {
+  width: 245px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-right: 1px #e0e0e0 solid;
+  transition: all 1s;
+}
+nav > div.navbar .nav.navbar-right > input[type='search']:focus {
+  border: 1px darkorange solid;
+}
+nav > div.navbar .nav.navbar-right > input[type='submit'] {
+  width: 52px;
+  box-sizing: border-box;
+  padding: 1px 6px;
+  background-color: white;
+}
+#banner.container {
+  width: 1226px;
+  height: 670px;
+}
+#banner.container .banner.container {
+  height: 460px;
+}
+#banner.container .banner.container .wrapper {
+  width: 100%;
+}
+#banner.container .banner.container .wrapper img {
+  width: 100%;
+  font-size: 0;
+}

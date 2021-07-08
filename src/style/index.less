@@ -1,0 +1,210 @@
+html {
+    width: 100%;
+    overflow: scroll;
+}
+
+@cWidth :1226px;
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: darkorange;
+    }
+}
+
+body {
+    width: 100%;
+    // letter-spacing: 1px;
+
+}
+
+header {
+    background-color: #333333;
+    height: 40px;
+    text-align: center;
+    color: #424242;
+
+    div.navbar {
+        padding: 0;
+        flex-wrap: nowrap !important;
+        line-height: 40px;
+        width: @cWidth;
+
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #b0b0b0;
+        font-size: 12px;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    span {
+        margin: 0 0.3em;
+
+    }
+
+    .nav {
+        flex-wrap: nowrap !important;
+        white-space: nowrap;
+
+        &:last-of-type {
+            span {
+                margin: 0;
+            }
+
+            :last-of-type {
+                span:first-of-type {
+
+                    margin: 5px;
+                }
+            }
+
+            :nth-of-type(3) {
+                padding: 0 10px;
+
+            }
+        }
+    }
+
+
+
+    .lastone {
+        width: 120px;
+        display: block;
+        flex-shrink: 0;
+        text-align: center;
+        background-color: rgba(211, 211, 211, 0.1);
+        margin-left: 15px;
+
+
+
+        &:hover {
+            background-color: white;
+
+            a {
+                color: orange;
+            }
+        }
+    }
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+
+    &:hover {
+        position: relative;
+        left: 1px;
+    }
+}
+
+nav>div.navbar {
+    width: @cWidth;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100px;
+
+    a {
+        font-size: 16px;
+    }
+
+    ul {
+        padding-top: 10px;
+
+        li {
+            height: 88px;
+            text-align: center;
+            padding: 26px 10px 38px;
+        }
+    }
+
+    .nav.navbar-right {
+        border: 1px #e0e0e0 solid;
+        transition: all 1s;
+
+
+        &:hover {
+            &>input[type='search'] {
+                border-right: 1px black solid;
+                transition: all 1s;
+
+            }
+
+            &>input[type='submit'] {
+                background-color: darkorange;
+            }
+
+            border: 1px black solid;
+            transition: all 1s;
+        }
+
+
+
+        &>input {
+            height: 50px;
+            outline: none;
+            border: none;
+
+            &[type='search'] {
+                &:focus {
+                    border: 1px darkorange solid;
+                }
+
+                // onclick实线
+
+                width: 245px;
+                box-sizing: border-box;
+                padding: 0 10px;
+                border-right: 1px #e0e0e0 solid;
+                transition: all 1s;
+
+
+            }
+
+            &[type='submit'] {
+                width: 52px;
+                box-sizing: border-box;
+                padding: 1px 6px;
+                background-color: white;
+            }
+        }
+    }
+}
+
+#banner.container {
+
+    width: @cWidth;
+    height: 670px;
+
+    .banner.container {
+        height: 460px;
+
+        .wrapper {
+            width: 100%;
+
+
+            img {
+                width: 100%;
+                font-size: 0;
+
+            }
+
+        }
+    }
+}
