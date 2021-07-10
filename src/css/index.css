@@ -1,6 +1,5 @@
 html {
   width: 100%;
-  overflow: scroll;
 }
 .row {
   padding: 0;
@@ -20,6 +19,41 @@ a:hover {
 }
 body {
   width: 100%;
+}
+body > aside {
+  height: 455px;
+  width: 84px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: white;
+}
+body > aside a {
+  width: 84px;
+  height: 92px;
+  display: block;
+  border-top: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5;
+  color: #757575;
+}
+body > aside a:hover {
+  color: darkorange;
+}
+body > aside a:hover:last-of-type {
+  border-bottom: 1px solid #f5f5f5;
+}
+body > aside a div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > aside a div span {
+  font-size: 30px !important;
+}
+body > aside a i {
+  font-style: normal;
 }
 header {
   background-color: #333333;
@@ -99,7 +133,7 @@ nav > div.navbar ul li {
 nav > div.navbar ul.nav {
   padding-left: 95px;
 }
-nav > div.navbar ul.nav a:hover {
+nav > div.navbar ul.nav li:hover a {
   color: darkorange;
 }
 nav > div.navbar .nav.navbar-right {
@@ -165,7 +199,7 @@ nav > div.navbar .nav.navbar-right > input[type='submit']:hover {
   transition: all 0.3s;
 }
 #banner.container .row.panelsbar div.nav .ph:hover {
-  box-shadow: 0 5px 10px 1px lightgray;
+  box-shadow: 0 5px 20px 1px lightgray;
   transform: translateY(-3px);
   transition: all 0.3s;
 }
@@ -328,11 +362,264 @@ nav > div.navbar .nav.navbar-right > input[type='submit']:hover {
   width: 1226px;
   font-size: 0;
 }
+.adv {
+  margin: 22px 0;
+}
+.adv:last-of-type {
+  margin-bottom: 0;
+}
 .adv img {
   width: 100%;
 }
 main {
+  padding-bottom: 22px;
   background: #F5F5F5;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .firsto {
+  width: 234px;
+  height: 614px;
+  float: left;
+  transition: all 0.3s;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .firsto img {
+  width: 100%;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .firsto:hover {
+  box-shadow: 0 5px 20px 1px lightgray;
+  transform: translateY(-3px);
+  transition: all 0.3s;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco {
+  float: left;
+  width: 990px;
+  height: 628px;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul {
+  width: 992px;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul li {
+  transition: all 0.3s;
+  background: white;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  width: 234px;
+  height: 300px;
+  padding: 20px 0;
+  text-align: center;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul li:hover {
+  box-shadow: 0 15px 20px 1px lightgray;
+  transform: translateY(-3px);
+  transition: all 0.3s;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul li > a > p:last-of-type span {
+  color: #ff6709;
+  font-size: 14px;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul li > a > p:last-of-type del {
+  color: #b0b0b0;
+  font-size: 14px;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul li > a > p:nth-of-type(1) {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul li h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul li div {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 18px;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) .seco ul li div img {
+  width: 100%;
+}
+main section:nth-of-type(2) > .row.one p {
+  width: 92px;
+}
+main section:nth-of-type(2) > .row.one a {
+  width: 92px;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  vertical-align: top;
+  line-height: 24px;
+  transition: color 0.3s;
+}
+main section:nth-of-type(2) > .row.one a:hover {
+  transition: color 0.3s;
+}
+main section:nth-of-type(2) > .row.one a:hover span {
+  background: darkorange;
+  transition: background 0.3s;
+}
+main section:nth-of-type(2) > .row.one a span {
+  transition: background 0.3s;
+  display: inline-block;
+  width: 19px;
+  text-align: center;
+  height: 19px;
+  vertical-align: middle;
+  border-radius: 18px;
+  background-color: rgba(1, 1, 1, 0.3);
+  font-size: 12px;
+  line-height: 19px;
+  color: white;
+  margin-left: 4px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .firsto {
+  width: 234px;
+  height: 614px;
+  float: left;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .firsto a {
+  margin-bottom: 14px;
+  display: block;
+  transition: all 0.3s;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .firsto a:hover {
+  box-shadow: 0 5px 20px 1px lightgray;
+  transform: translateY(-3px);
+  transition: all 0.3s;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .firsto img {
+  width: 100%;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco {
+  float: left;
+  width: 990px;
+  height: 628px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul {
+  width: 992px;
+  position: relative;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li {
+  transition: all 0.3s;
+  background: white;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  width: 234px;
+  height: 300px;
+  padding: 20px 0;
+  text-align: center;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:nth-of-type(8) {
+  height: 143px;
+  padding-top: 50px;
+  position: relative;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:nth-of-type(8) div {
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:nth-of-type(8) p,
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:nth-of-type(8) h3 {
+  width: 94px;
+  margin-left: 30px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:last-of-type {
+  height: 143px;
+  padding-top: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:last-of-type .iconfont {
+  font-size: 80px;
+  line-height: 80px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:last-of-type h3 {
+  font-size: 18px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:last-of-type p {
+  color: #b0b0b0;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:last-of-type p,
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:last-of-type h3 {
+  text-align: left;
+  width: 94px;
+  margin-left: 30px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:last-of-type div {
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li:hover {
+  box-shadow: 0 15px 20px 1px lightgray;
+  transform: translateY(-3px);
+  transition: all 0.3s;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li > a > p:last-of-type span {
+  color: #ff6709;
+  font-size: 14px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li > a > p:last-of-type del {
+  color: #b0b0b0;
+  font-size: 14px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li > a > p:nth-of-type(1) {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li div {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 18px;
+}
+main section:nth-of-type(3) > div:nth-of-type(2) .seco ul li div img {
+  width: 100%;
+}
+main section:nth-of-type(3) > .row.one p {
+  width: 156px;
+}
+main section:nth-of-type(3) > .row.one a {
+  width: auto;
+  margin-left: 30px;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  vertical-align: top;
+  line-height: 24px;
+  transition: all 0.3s;
+}
+main section:nth-of-type(3) > .row.one a.active {
+  border-bottom: 2px solid darkorange;
+  color: darkorange;
+}
+main section:nth-of-type(3) > .row.one a:hover {
+  transition: all 0.3s;
+  border-bottom: 2px solid darkorange;
+}
+main section:nth-of-type(3) > .row.one a:hover span {
+  background: darkorange;
+  transition: background 0.3s;
+}
+main section:nth-of-type(3) > .row.one a span {
+  transition: background 0.3s;
+  display: inline-block;
+  width: 19px;
+  text-align: center;
+  height: 19px;
+  vertical-align: middle;
+  border-radius: 18px;
+  background-color: rgba(1, 1, 1, 0.3);
+  font-size: 12px;
+  line-height: 19px;
+  color: white;
+  margin-left: 4px;
 }
 main section > .row.one {
   position: relative;
@@ -399,7 +686,6 @@ main section > .row.two > .second {
   width: 978px;
   height: 340px;
   margin-left: 14px;
-  margin-bottom: 22px;
 }
 main section > .row.two > .second ul.nav {
   overflow: hidden;
@@ -422,12 +708,10 @@ main section > .row.two > .second ul.nav li > a > div > p:nth-of-type(1) {
 main section > .row.two > .second ul.nav li > a > div > p:last-of-type span {
   color: #ff6709;
   font-size: 14px;
-  font-weight: bold;
 }
 main section > .row.two > .second ul.nav li > a > div > p:last-of-type del {
   color: #b0b0b0;
   font-size: 14px;
-  font-weight: bold;
 }
 main section > .row.two > .second ul.nav li > a > div > div {
   margin: 0 37px 22px;
@@ -439,4 +723,136 @@ main section > .row.two > .second ul.nav li > a > div > div > img {
 main section > .row.two > .second ul.nav li > a > div > h3 {
   font-size: 14px;
   margin-bottom: 3px;
+}
+footer .linkbar {
+  padding: 40px 0;
+}
+footer .linkbar > ul {
+  padding: 0;
+  list-style: none;
+  float: left;
+  width: 160px;
+}
+footer .linkbar > ul:last-of-type {
+  margin: -1px 0 26px;
+  font-size: 14px;
+  float: right;
+  width: 252px;
+  text-align: center;
+  border-left: 1px solid #e0e0e0;
+}
+footer .linkbar > ul:last-of-type .binacode {
+  width: 126px;
+  height: 126px;
+  display: none;
+  position: absolute;
+  left: calc(50% - 58px);
+}
+footer .linkbar > ul li {
+  position: relative;
+  font-size: 12px;
+  margin-top: 10px;
+}
+footer .linkbar > ul li:first-of-type {
+  margin: -1px 0 26px;
+  font-size: 14px;
+}
+footer .linkbar > ul li a {
+  color: #757575;
+}
+footer .linkbar > ul li a:hover {
+  color: darkorange;
+}
+footer .service {
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+footer .service ul {
+  list-style: none;
+  display: flex;
+  height: 25px;
+}
+footer .service ul li {
+  width: 20%;
+}
+footer .service ul li:not(:last-of-type) {
+  border-right: 1px solid #e0e0e0;
+}
+footer .service ul li a {
+  justify-content: center;
+  height: 25px;
+  align-items: flex-start;
+  color: #616161;
+  display: flex;
+}
+footer .service ul li a:hover {
+  color: darkorange;
+}
+footer .service ul li a span {
+  font-size: 24px;
+  line-height: 24px;
+}
+footer .service ul li a h3 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.final {
+  background: #fafafa;
+  padding: 30px 0;
+}
+.final .container.one {
+  position: relative;
+}
+.final p {
+  margin: 0;
+}
+.final .boon {
+  height: 19px;
+  margin-top: 30px;
+  background: url(../images/发烧而生.png) no-repeat center;
+}
+.final .phtext {
+  padding-left: 67px;
+}
+.final .phtext img {
+  margin-bottom: 15px;
+  width: 83px;
+}
+.final .logo {
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+  position: absolute;
+}
+.final .text {
+  line-height: 18px;
+  color: #757575;
+  font-size: 12px;
+  padding-left: 67px;
+}
+.final .text a:hover {
+  color: darkorange;
+}
+.final .text p:nth-of-type(3),
+.final .text p:nth-of-type(4),
+.final .text p:nth-of-type(5),
+.final .text p:nth-of-type(6) {
+  color: #b0b0b0;
+}
+.final .text p:nth-of-type(3) a,
+.final .text p:nth-of-type(4) a,
+.final .text p:nth-of-type(5) a,
+.final .text p:nth-of-type(6) a {
+  color: #b0b0b0;
+}
+.final .text p:nth-of-type(3) a:hover,
+.final .text p:nth-of-type(4) a:hover,
+.final .text p:nth-of-type(5) a:hover,
+.final .text p:nth-of-type(6) a:hover {
+  color: darkorange;
+}
+.final .text a {
+  color: #757575;
 }
