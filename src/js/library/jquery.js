@@ -10881,4 +10881,4 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
-export default {$};
+export default $;
