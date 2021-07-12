@@ -8,7 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../node_modules\_bootstrap@5.0.2@bootstrap\dist\css\bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/index.js" type="module"></script>
+    <script src="../../node_modules/_jquery@3.6.0@jquery/dist/jquery.js"></script>
+    <script src="../js/index.js"></script>
     <script src="../../node_modules/_bootstrap@5.0.2@bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../font/font_6y143p0oy4e/iconfont.css">
     <script src="../../src/font/font_6y143p0oy4e/iconfont.js"></script>
@@ -16,6 +17,7 @@
 
 <body>
     <header>
+        <!-- 动态加载内容 -->
         <div class="container navbar">
             <ul class="nav">
                 <li><a href="#">小米商城</a></li><span>|</span>
@@ -43,6 +45,7 @@
                     <a href="#">消息通知</a>
                 </li>
                 <li class="lastone"><a href="#"><span class="iconfont icon-gouwuche"></span>购物车<span>(0)</span></a>
+                    <div>购物车中还没有商品，赶紧选购吧！</div>
                 </li>
             </ul>
 
@@ -81,9 +84,9 @@
                 <i>购物车</i>
             </div>
         </a>
-
     </aside>
     <nav>
+
         <div class="container navbar">
             <div><a href="#">
                     <svg class="icon" aria-hidden="true">
@@ -91,8 +94,10 @@
                     </svg>
                 </a></div>
 
-            <ul class="nav">
-                <li><a href="#">小米手机</a></li>
+            <ul class="nav" >
+                
+                <li><a href="#">小米手机</a>
+                </li>
                 <li><a href="#">Redmi红米</a></li>
                 <li><a href="#">电视</a></li>
                 <li><a href="#">笔记本</a></li>
@@ -101,6 +106,31 @@
                 <li><a href="#">智能硬件</a></li>
                 <li><a href="#">服务</a></li>
                 <li><a href="#">社区</a></li>
+                <div class="navmenu">
+                    <ul class="container nav">
+                        <li><a href="#"><img src="../images/产品兔兔1.webp">
+                                <p>k40超级游戏手机</p>
+                                <span>不要钱</span>
+                            </a></li>
+                        <li><a href="#"><img src="../images/产品兔兔1.webp">
+                                <p>k40超级游戏手机</p>
+                                <span>不要钱</span>
+                            </a></li>
+                        <li><a href="#"><img src="../images/产品兔兔1.webp">
+                                <p>k40超级游戏手机</p>
+                                <span>不要钱</span>
+                            </a></li>
+                        <li><a href="#"><img src="../images/产品兔兔1.webp">
+                                <p>k40超级游戏手机</p>
+                                <span>不要钱</span>
+                            </a></li>
+                        <li><a href="#"><img src="../images/产品兔兔1.webp">
+                                <p>k40超级游戏手机</p>
+                                <span>不要钱</span>
+                            </a></li>
+
+                    </ul>
+                </div>
             </ul>
 
 
@@ -110,6 +140,7 @@
             </div>
         </div>
     </nav>
+    
     <div id="banner" class="container">
         <div class="banner container">
             <div class="fixednav">
@@ -127,21 +158,48 @@
 
                 </ul>
             </div>
-            <div class="fixednav-right">
-                <ul></ul>
+            <div class="fixednav-right clearfix">
+
+                <ul>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+                    <li><a href="#"><img src="../images/产品小小图.webp" alt=""><span>小米MIX FOLD</span></a></li>
+
+                </ul>
             </div>
-            <div class="wrapper"><img src="../images/轮播图1.webp" alt=""></div>
-            <div class="wrapper"><img src="../images/轮播图2.webp" alt=""></div>
-            <div class="wrapper"><img src="../images/轮播图3.webp" alt=""></div>
-            <div class="wrapper"><img src="../images/轮播图4.png" alt=""></div>
+            <div class="wrapper"><a href="#"><img src="../images/轮播图1.webp" alt=""></a></div>
+            <div class="wrapper"><a href="#"><img src="../images/轮播图2.webp" alt=""></a></div>
+            <div class="wrapper"><a href="#"><img src="../images/轮播图3.webp" alt=""></a></div>
+            <div class="wrapper"><a href="#"><img src="../images/轮播图4.png" alt=""></a></div>
             <!-- control -->
             <div class="remotebanner">
-                <a href="#" class="active">
+                <span class="active">
 
-                </a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                </span>
+                <span></span>
+                <span></span>
+                <span></span>
 
             </div>
             <p class="swiper-button-prev"><span class="iconfont icon-you"></span></p>
@@ -178,16 +236,16 @@
             <div class="row one">
                 <h2>小米秒杀</h2>
                 <p>
-                    <a href="#">
-                        <span class="iconfont icon-left">
 
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span class="iconfont icon-you">
+                    <span class="iconfont icon-left">
 
-                        </span>
-                    </a>
+                    </span>
+
+
+                    <span class="iconfont icon-you">
+
+                    </span>
+
                 </p>
             </div>
             <div class="row two">
@@ -199,119 +257,124 @@
 
                 </div>
                 <div class="second">
-                    <ul class="nav">
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
-                        <li><a href="#">
-                                <div>
-                                    <div><img src="../images/产品1.webp" alt=""></div>
-                                    <h3>拉杆箱非常不辍</h3>
-                                    <p>超长续航，给你持久</p>
-                                    <p><span>379元</span>&nbsp;<del>999元</del></p>
-                                </div>
-                            </a></li>
+                    <ul class="nav clearfix">
+                        <div class="nav">
+
+
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div>
+                                        <div><img src="../images/产品1.webp" alt=""></div>
+                                        <h3>拉杆箱非常不辍</h3>
+                                        <p>超长续航，给你持久</p>
+                                        <p><span>379元</span>&nbsp;<del>999元</del></p>
+                                    </div>
+                                </a></li>
+                        </div>
+
 
                     </ul>
 
@@ -472,12 +535,12 @@
                 <h2>家电</h2>
                 <p>
 
-                    <a href="#" class="active">
+                    <span href="#" class="active">
                         家电
-                    </a>
-                    <a href="#">
+                    </span>
+                    <span href="#">
                         热门影音
-                    </a>
+                    </span>
 
                 </p>
             </div>
@@ -629,7 +692,7 @@
             <div class="adv">
                 <a href="#"><img src="../images/广告3.webp" alt=""></a>
             </div>
-        </section>
+        </section>`
     </main>
     <footer class="container">
         <div class="service">

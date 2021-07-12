@@ -20,6 +20,13 @@
       "unicode_decimal": 59247
     },
     {
+      "icon_id": "3922217",
+      "name": "勾",
+      "font_class": "gou",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
       "icon_id": "4741646",
       "name": "建筑",
       "font_class": "jianzhu",
@@ -39,6 +46,13 @@
       "font_class": "left",
       "unicode": "e501",
       "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "16950697",
+      "name": "location",
+      "font_class": "customer-unvisited",
+      "unicode": "e621",
+      "unicode_decimal": 58913
     },
     {
       "icon_id": "17001542",
@@ -74,6 +88,13 @@
       "font_class": "gouwuche",
       "unicode": "e604",
       "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "21848117",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
     },
     {
       "icon_id": "22644266",

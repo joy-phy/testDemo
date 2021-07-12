@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1625749429453') format('truetype');
+  src: url('iconfont.ttf?t=1626067782397') format('truetype');
 }
 
 .iconfont {
@@ -19,6 +19,10 @@
   content: "\e76f";
 }
 
+.icon-gou:before {
+  content: "\e68c";
+}
+
 .icon-jianzhu:before {
   content: "\e642";
 }
@@ -29,6 +33,10 @@
 
 .icon-left:before {
   content: "\e501";
+}
+
+.icon-customer-unvisited:before {
+  content: "\e621";
 }
 
 .icon-shoujika:before {
@@ -49,6 +57,10 @@
 
 .icon-gouwuche:before {
   content: "\e604";
+}
+
+.icon-xin:before {
+  content: "\e61a";
 }
 
 .icon-you:before {
