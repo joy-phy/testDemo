@@ -149,6 +149,9 @@ nav .navmenu {
   transition: all 0.3s;
   overflow: hidden;
 }
+nav .navmenu ul {
+  flex-wrap: nowrap;
+}
 nav .navmenu li {
   width: 204px;
   position: relative;
@@ -190,51 +193,46 @@ nav > div.navbar {
 nav > div.navbar a {
   font-size: 16px;
 }
-nav > div.navbar ul:hover .navmenu {
-  height: 230px;
-  transition: all 0.3s;
-  box-shadow: 0 1px 3px 0 lightgray;
-  border-top: 1px solid lightgray;
-}
-nav > div.navbar ul li {
+nav > div.navbar li {
   height: 88px;
+  transform: translateY(15px);
   text-align: center;
-  padding: 26px 10px 38px;
+  padding: 11px 10px 38px;
 }
-nav > div.navbar ul.nav {
+ul.nav {
   padding-left: 95px;
 }
-nav > div.navbar ul.nav li:hover a {
+ul.nav li:hover a {
   color: darkorange;
 }
-nav > div.navbar .nav.navbar-right {
+.nav.navbar-right {
   transition: all 0.3s;
 }
-nav > div.navbar .nav.navbar-right:hover > input[type='search'] {
+.nav.navbar-right:hover > input[type='search'] {
   border: 1px #b2b2b2 solid;
   transition: all 0.3s;
 }
-nav > div.navbar .nav.navbar-right:hover > input[type='submit'] {
+.nav.navbar-right:hover > input[type='submit'] {
   border: 1px #b2b2b2 solid;
   border-left: none;
   transition: all 0.3s;
 }
-nav > div.navbar .nav.navbar-right > input {
+.nav.navbar-right > input {
   height: 50px;
   outline: none;
   border: none;
 }
-nav > div.navbar .nav.navbar-right > input[type='search'] {
+.nav.navbar-right > input[type='search'] {
   width: 245px;
   box-sizing: border-box;
   padding: 0 10px;
   border: 1px #e0e0e0 solid;
   transition: all 0.3s;
 }
-nav > div.navbar .nav.navbar-right > input[type='search']:focus {
+.nav.navbar-right > input[type='search']:focus {
   border: 1px darkorange solid;
 }
-nav > div.navbar .nav.navbar-right > input[type='submit'] {
+.nav.navbar-right > input[type='submit'] {
   width: 52px;
   height: 50px;
   box-sizing: border-box;
@@ -244,7 +242,7 @@ nav > div.navbar .nav.navbar-right > input[type='submit'] {
   border-left: none;
   transition: all 0.3s;
 }
-nav > div.navbar .nav.navbar-right > input[type='submit']:hover {
+.nav.navbar-right > input[type='submit']:hover {
   background-color: darkorange;
   transition: all 0.3s;
 }

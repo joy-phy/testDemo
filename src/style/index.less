@@ -234,6 +234,10 @@ nav {
         transition: all .3s;
         overflow: hidden;
 
+        ul {
+            flex-wrap: nowrap;
+        }
+
         li {
             width: 204px;
             position: relative;
@@ -286,106 +290,99 @@ nav>div.navbar {
         font-size: 16px;
     }
 
-    ul {
-        &:hover .navmenu {
-            height: 230px;
-            transition: all .3s;
-            box-shadow: 0 1px 3px 0 lightgray;
-            border-top: 1px solid lightgray;
+
+
+    li {
+
+        height: 88px;
+
+        transform: translateY(15px);
+        text-align: center;
+        padding: 11px 10px 38px;
+    }
+}
+
+ul.nav {
+    padding-left: 95px;
+
+    li:hover a {
+        color: darkorange;
+    }
+}
+
+.nav.navbar-right {
+    // border: 1px #e0e0e0 solid;
+    transition: all 0.3s;
+
+
+
+    &:hover {
+        &>input[type='search'] {
+            // border-right: 1px lightgray solid;
+
+
+            border: 1px #b2b2b2 solid;
+            transition: all 0.3s;
 
         }
 
-        li {
+        // &>input[type='submit'] {
+        //     background-color: darkorange;
+        // }
+        &>input[type='submit'] {
+            // border-right: 1px lightgray solid;
 
-            height: 88px;
 
+            border: 1px #b2b2b2 solid;
+            border-left: none;
+            transition: all 0.3s;
 
-            text-align: center;
-            padding: 26px 10px 38px;
         }
+
     }
 
-    ul.nav {
-        padding-left: 95px;
-
-        li:hover a {
-            color: darkorange;
-        }
-    }
-
-    .nav.navbar-right {
-        // border: 1px #e0e0e0 solid;
-        transition: all 0.3s;
 
 
+    &>input {
+        height: 50px;
+        outline: none;
+        border: none;
 
-        &:hover {
-            &>input[type='search'] {
-                // border-right: 1px lightgray solid;
-
-
-                border: 1px #b2b2b2 solid;
-                transition: all 0.3s;
-
+        &[type='search'] {
+            &:focus {
+                border: 1px darkorange solid;
             }
 
-            // &>input[type='submit'] {
-            //     background-color: darkorange;
-            // }
-            &>input[type='submit'] {
-                // border-right: 1px lightgray solid;
+            // onclick实线
 
+            width: 245px;
+            box-sizing: border-box;
+            padding: 0 10px;
+            border: 1px #e0e0e0 solid;
+            transition: all 0.3s;
 
-                border: 1px #b2b2b2 solid;
-                border-left: none;
-                transition: all 0.3s;
-
-            }
 
         }
 
-
-
-        &>input {
+        &[type='submit'] {
+            width: 52px;
             height: 50px;
-            outline: none;
-            border: none;
+            box-sizing: border-box;
+            padding: 1px 6px;
+            background-color: white;
+            border: 1px #e0e0e0 solid;
+            border-left: none;
+            transition: all 0.3s;
 
-            &[type='search'] {
-                &:focus {
-                    border: 1px darkorange solid;
-                }
 
-                // onclick实线
-
-                width: 245px;
-                box-sizing: border-box;
-                padding: 0 10px;
-                border: 1px #e0e0e0 solid;
+            &:hover {
+                background-color: darkorange;
                 transition: all 0.3s;
-
-
-            }
-
-            &[type='submit'] {
-                width: 52px;
-                height: 50px;
-                box-sizing: border-box;
-                padding: 1px 6px;
-                background-color: white;
-                border: 1px #e0e0e0 solid;
-                border-left: none;
-                transition: all 0.3s;
-
-
-                &:hover {
-                    background-color: darkorange;
-                    transition: all 0.3s;
-                }
             }
         }
     }
 }
+
 
 #banner.container {
     margin-bottom: 26px;

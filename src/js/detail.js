@@ -244,20 +244,35 @@ $(function () {
 
             }
 
-            $('nav .navbar ul.nav li:gt(0)').on('mouseenter', function () {
+            $('nav .navbar ul.nav').on('mouseenter', ' li:gt(0):lt(7)',function () {
                 $('nav .navbar ul.nav .navmenu').css({
                     height: '230px',
                     transition: 'all .3s',
                     'box-shadow': ' 0 1px 3px 0 lightgray',
                     'border-top': ' 1px solid lightgray'
                 })
-            }).on('mouseleave', function () {
+            }).on('mouseleave', ' li:gt(0):lt(7)',function () {
                 $('nav .navbar ul.nav .navmenu').css({
                     height: '0px',
                     transition: 'all .3s',
 
                 })
             })
+            $('nav .navbar ul.nav').on('mouseenter','.navmenu',function () {
+                $('nav .navbar ul.nav .navmenu').css({
+                    height: '230px',
+                    transition: 'all .3s',
+                    'box-shadow': ' 0 1px 3px 0 lightgray',
+                    'border-top': ' 1px solid lightgray'
+                })
+            }).on('mouseleave', '.navmenu',function () {
+                $('nav .navbar ul.nav .navmenu').css({
+                    height: '0px',
+                    transition: 'all .3s',
+
+                })
+            })
+            
             $('.text-bottom div:eq(1) button').on('click',function(){
                 $(this).addClass('active').siblings().removeClass('active')
             })

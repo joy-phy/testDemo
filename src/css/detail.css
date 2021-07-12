@@ -191,9 +191,10 @@ nav > div.navbar a {
   font-size: 16px;
 }
 nav > div.navbar ul li {
+  transform: translateY(15px);
   height: 88px;
   text-align: center;
-  padding: 26px 10px 38px;
+  padding: 11px 10px 38px;
 }
 nav > div.navbar ul.nav {
   padding-left: 95px;

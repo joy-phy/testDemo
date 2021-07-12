@@ -20,6 +20,13 @@
       "unicode_decimal": 59247
     },
     {
+      "icon_id": "3309114",
+      "name": "二维码",
+      "font_class": "erweima-copy",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
       "icon_id": "3922217",
       "name": "勾",
       "font_class": "gou",
@@ -60,6 +67,13 @@
       "font_class": "shoujika",
       "unicode": "e69c",
       "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "18800712",
+      "name": "圆圈",
+      "font_class": "yuanquan",
+      "unicode": "e608",
+      "unicode_decimal": 58888
     },
     {
       "icon_id": "20698500",
