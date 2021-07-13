@@ -225,10 +225,23 @@ a {
                     color: black;
                 }
 
+                &>div {
+                    overflow: hidden;
+
+                    &>label {
+                        height: 100%;
+                        padding: 20px;
+                        width: 100%;
+                        transition: all .2s;
+                        color: rgba(0, 0, 0, .4);
+                        font-size: 17px;
+                    }
+                }
+
                 &>span {
                     font-size: 12px;
                     margin-top: 10px;
-                    display: block;
+                    display: none;
                     color: orangered;
                 }
 
@@ -237,7 +250,7 @@ a {
                     width: 364px;
                     height: 60px;
 
-                    padding: 20px;
+
                     background-color: #f9f9f9;
                     border-radius: 5px;
 
@@ -276,11 +289,11 @@ a {
                     width: 364px;
                     height: 60px;
 
-                    padding: 20px;
+
                     background-color: #f9f9f9;
                     border-radius: 5px;
 
-                    p {
+                    label {
                         color: rgba(0, 0, 0, .4);
                         font-size: 17px;
                         width: 232px;
@@ -289,10 +302,14 @@ a {
 
                     }
 
+                    position: relative;
+
                     button {
                         color: orangered;
                         background-color: transparent;
-
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
                         border: none;
 
                     }
@@ -303,7 +320,7 @@ a {
                     width: 364px;
                     height: 60px;
 
-                    padding: 20px;
+
                     background-color: #f9f9f9;
                     border-radius: 5px;
 
