@@ -39,12 +39,57 @@ a {
     >div:last-of-type {
         float: right;
         color: #838383;
+        position: relative;
 
+        ul {
+            list-style: none;
+            height: 0;
+            overflow: hidden;
+            transition: all .3s;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            right: 15px;
+            text-align: center;
+            box-shadow: 0 0 5px 0 lightgray;
+
+            li {
+                box-sizing: border-box;
+                padding: 9px 14px;
+                line-height: 14px;
+
+
+
+                a {
+                    font-size: 14px;
+                    margin: 0 !important;
+                }
+
+            }
+
+        }
 
         a {
+
             &:last-of-type {
                 position: relative;
                 margin-right: 25px;
+
+                &.active {
+                    color: darkorange;
+
+                    span {
+                        display: inline-block;
+                        line-height: 40px;
+                        vertical-align: middle;
+                        border-top: 5px solid darkorange;
+                        border-right: 5px solid transparent;
+                        border-left: 5px solid transparent;
+                        transform: rotate(180deg);
+                        margin: 0;
+                        transition: all .3s;
+                    }
+                }
 
                 span {
                     display: inline-block;
@@ -104,9 +149,77 @@ a {
                 background-color: gray;
             }
 
-            &>.tab-list {
+            &>p#first-con:first-of-type {
+                height: 40px;
+                position: relative;
+                margin-bottom: 10px;
+
+                &>i {
+                    content: '';
+                    height: 4px;
+                    width: 44px;
+                    background-color: orangered;
+                    display: block;
+                    position: absolute;
+                    bottom: 0px;
+                    border-radius: 2px;
+                    transition: all .3s;
+                }
+
+                a {
+                    font-size: 22px;
+                    color: #bbb;
+                    margin-right: 20px;
+
+                    &.active {
+                        color: #333;
+                        font-weight: bold;
+                    }
+                }
+
+
+            }
+
+            &>div.nav {
+                flex-wrap: nowrap;
+
+            }
+
+            &>p#first-con:first-of-type {
+                height: 40px;
+                position: relative;
+                margin-bottom: 10px;
+
+                &>i {
+                    content: '';
+                    height: 4px;
+                    width: 44px;
+                    background-color: orangered;
+                    display: block;
+                    position: absolute;
+                    bottom: 0px;
+                    border-radius: 2px;
+                    transition: all .3s;
+                }
+
+                a {
+                    font-size: 22px;
+                    color: #bbb;
+                    margin-right: 20px;
+
+                    &.active {
+                        color: #333;
+                        font-weight: bold;
+                    }
+                }
+
+
+            }
+
+            & .tab-list {
                 font-size: 14px;
                 color: rgba(0, 0, 0, .5);
+                margin-right: 50px;
 
                 a {
                     color: black;
@@ -201,36 +314,21 @@ a {
                     }
                 }
 
-                &>p:first-of-type {
+                &>p:last-of-type {
+                    width: 360px;
                     height: 40px;
-                    position: relative;
-                    margin-bottom: 10px;
-
-                    &>i {
-                        content: '';
-                        height: 4px;
-                        width: 44px;
-                        background-color: orangered;
-                        display: block;
-                        position: absolute;
-                        bottom: 0px;
-                        border-radius: 2px;
-                        transition: all .3s;
-                    }
-
-                    a {
-                        font-size: 22px;
-                        color: #bbb;
-                        margin-right: 20px;
-
-                        &.active {
-                            color: #333;
-                            font-weight: bold;
-                        }
-                    }
-
-
+                    margin: 10px 0;
+                    font-size: 17px;
+                    text-align: center;
+                    line-height: 40px;
                 }
+
+                &>div:last-of-type {
+                    padding: 0 50px;
+                    justify-content: space-around;
+                }
+
+
 
                 #question {
                     color: orangered;
@@ -244,7 +342,6 @@ a {
             overflow: hidden;
             position: relative;
             width: 450px;
-            height: 600px;
             padding: 40px 45px;
             box-shadow: 0 0 10px 0 lightgray;
 
@@ -273,7 +370,7 @@ a {
 
                     left: -128px;
                     opacity: 0;
-                    transition: all cubic-bezier(.64, .46, .89, 1.51) .1s
+                    transition: all cubic-bezier(.64, .46, .89, 1.51) .3s
                 }
 
 
@@ -316,7 +413,7 @@ a {
                         transform: scale(1.1);
 
                         opacity: 1;
-                        transition: all .1s cubic-bezier(.64, .46, .89, 1.51)
+                        transition: all .3s cubic-bezier(.64, .46, .89, 1.51)
                     }
                 }
 
