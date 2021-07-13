@@ -199,9 +199,6 @@ nav > div.navbar li {
   text-align: center;
   padding: 11px 10px 38px;
 }
-ul.nav {
-  padding-left: 95px;
-}
 ul.nav li:hover a {
   color: darkorange;
 }
