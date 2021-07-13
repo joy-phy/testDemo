@@ -382,9 +382,46 @@ nav>div.navbar {
     }
 }
 
+.prevmsg {
+    text-align: center;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 40px;
+
+    &>div {
+
+        // transform: translateY(40px);
+
+
+        a {
+            color: darkorange;
+            margin-left: 40px;
+        }
+
+        i {
+            font-style: normal;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    }
+}
+
+.detail-title.one {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    transition: all .3s;
+    z-index: 100;
+}
+
 .detail-title {
+    position: relative;
+    z-index: 1;
     border: 1px solid #e0e0e0;
     box-shadow: 10px 10px 10px 0 lightgray;
+
 
     h2 {
         font-size: 18px;

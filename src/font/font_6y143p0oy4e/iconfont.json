@@ -41,6 +41,13 @@
       "unicode_decimal": 58946
     },
     {
+      "icon_id": "5020076",
+      "name": "眼睛 (1)",
+      "font_class": "yanjing",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
       "icon_id": "7897782",
       "name": "时间 历史记录 计时 钟表 线性",
       "font_class": "time1",
@@ -88,6 +95,13 @@
       "font_class": "xiaomixinLogo",
       "unicode": "e623",
       "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "21446390",
+      "name": "眼睛 (1)",
+      "font_class": "yanjing1",
+      "unicode": "e628",
+      "unicode_decimal": 58920
     },
     {
       "icon_id": "21793895",

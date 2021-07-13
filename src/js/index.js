@@ -188,12 +188,12 @@ $(function () {
         })
 
     })
-    $('.fixednav-right').on('mouseenter', function () {
-        $(this).css({
+    $('.fixednav-right').on('mouseenter','ul',function () {
+        $(this.parentNode).css({
             display: 'block'
         })
-    }).on('mouseleave', function () {
-        $(this).css({
+    }).on('mouseleave', 'ul',function () {
+        $(this.parentNode).css({
             display: 'none'
         })
 

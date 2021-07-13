@@ -59,12 +59,13 @@ $(function () {
             console.log(ev.target.nodeName)
 
 
-            if (ev.target.nodeName.toLowerCase() == 'label') {
+            if (ev.target.nodeName.toLowerCase() == 'label' && !($(ev.target).parent().children('input').index() >= 0)) {
+
                 $(ev.target).css({
                     height: '20px',
                     transition: 'all .2s',
                     'font-size': '12px',
-                    color:'rgba(0, 0, 0, 0.4)',
+                    color: 'rgba(0, 0, 0, 0.4)',
                     padding: `5px 0 0 0`,
                     'margin': `0 0 0 20px`
 
@@ -80,57 +81,130 @@ $(function () {
                     backgroundColor: 'white',
                     boxShadow: `0 0 2px 0 darkorange`
                 })
+            } else {
+                $('.password .iconfont').on('click', function () {
+                    if ($(this).hasClass('icon-yanjing')) {
+                        $(this).addClass('icon-yanjing1').removeClass('icon-yanjing');
+                        if ($(this).parent().children('input').val()) {
+
+                            let i = $(this).parent().children('input').val();
+                            $(this).parent().children('input').remove();
+                            $(`<input type="text" value="${i}"  id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;background:rgb(249, 249, 249)">`).appendTo($(this).parent())
+                        }
+                    } else {
+                        $(this).addClass('icon-yanjing').removeClass('icon-yanjing1');
+                        if ($(this).parent().children('input').val()) {
+
+                            let i = $(this).parent().children('input').val();
+                            $(this).parent().children('input').remove();
+                            $(`<input type="password" value="${i}"  id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;background:rgb(249, 249, 249)">`).appendTo($(this).parent())
+
+                        }
+
+                    };
+                })
             }
 
-            $('.tab-list>div:lt(3)').each((index, el) => {
+            $('.tab-list:eq(1)>div:lt(3)').each((index, el) => {
                 $(el).children('input').on('blur', function () {
                     if (!$(this).val()) {
                         $(ev.target).parent().css({
                             border: 'none',
                             backgroundColor: '#FCF2F3',
                             color: 'red',
-                            transition:'all .3s'
+                            transition: 'all .3s',
+                            'margin-bottom': `0`
+
 
                         })
                         $(ev.target).parent().next('span').css({
-                            display:'block'
+                            display: 'block'
                         })
                         $(ev.target).css({
                             height: '100%',
-                            width:"100%",
-                            color:'orangered',
+                            width: "100%",
+                            color: 'orangered',
                             transition: 'all .2s',
                             'font-size': '17px',
                             padding: `20px`,
-                            'margin': `0`,
-                            transition:'all .3s'
+                            transition: 'all .3s'
 
 
                         })
                         $(this).remove()
 
-                    }else{
+                    } else {
                         $(ev.target).parent().css({
                             border: 'none',
-                            boxShadow:'none',
+                            boxShadow: 'none',
+                            'margin-bottom': '27.6px',
                             backgroundColor: '#F9F9F9',
-                            transition:'all .3s'
+                            transition: 'all .3s'
                         })
                         $(ev.target).parent().next('span').css({
-                            display:'none'
+                            display: 'none'
                         })
                         $(ev.target).css({
-                            backgroundColor:'#F9F9F9',
-                            transition:'all .3s'
+                            backgroundColor: '#F9F9F9',
+                            transition: 'all .3s'
+
+                        })
+                    }
+                })
+            })
+            $('.tab-list:eq(0)>div:lt(3)').each((index, el) => {
+                $(el).children('input').on('blur', function () {
+                    if (!$(this).val()) {
+                        $(ev.target).parent().css({
+                            border: 'none',
+                            backgroundColor: '#FCF2F3',
+                            color: 'red',
+                            transition: 'all .3s',
+                            'margin-bottom': `0`
+
+
+                        })
+                        $(ev.target).parent().next('span').css({
+                            display: 'block'
+                        })
+                        $(ev.target).css({
+                            height: '100%',
+                            width: "100%",
+                            color: 'orangered',
+                            transition: 'all .2s',
+                            'font-size': '17px',
+                            padding: `20px`,
+                            transition: 'all .3s'
+
+
+                        })
+                        $(this).remove()
+
+                    } else {
+                        $(ev.target).parent().css({
+                            border: 'none',
+                            boxShadow: 'none',
+                            'margin-bottom': '27.6px',
+                            backgroundColor: '#F9F9F9',
+                            transition: 'all .3s'
+                        })
+                        $(ev.target).parent().next('span').css({
+                            display: 'none'
+                        })
+                        $(ev.target).css({
+                            backgroundColor: '#F9F9F9',
+                            transition: 'all .3s'
 
                         })
                     }
                 })
             })
 
+
         })
 
 
     })
+
 
 })

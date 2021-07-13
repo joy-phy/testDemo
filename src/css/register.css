@@ -176,6 +176,24 @@ a {
   color: rgba(0, 0, 0, 0.5);
   margin-right: 50px;
 }
+.mi-account > .container > .box .tab-list .password {
+  position: relative;
+}
+.mi-account > .container > .box .tab-list .password label {
+  width: 304px;
+}
+.mi-account > .container > .box .tab-list .password i {
+  right: 0;
+  top: 0;
+  display: block;
+  height: 60px;
+  width: 60px;
+  padding: 10px 0;
+  position: absolute;
+}
+.mi-account > .container > .box .tab-list .password i.iconfont {
+  font-size: 28px;
+}
 .mi-account > .container > .box .tab-list a {
   color: black;
 }
@@ -200,6 +218,7 @@ a {
   margin-top: 20px;
   width: 364px;
   height: 60px;
+  margin-bottom: 27.6px;
   background-color: #f9f9f9;
   border-radius: 5px;
 }
@@ -229,6 +248,7 @@ a {
   margin-top: 20px;
   width: 364px;
   height: 60px;
+  margin-bottom: 27.6px;
   background-color: #f9f9f9;
   border-radius: 5px;
   position: relative;
@@ -252,6 +272,7 @@ a {
   margin-top: 20px;
   width: 364px;
   height: 60px;
+  margin-bottom: 27.6px;
   background-color: #f9f9f9;
   border-radius: 5px;
 }
