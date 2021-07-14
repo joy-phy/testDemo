@@ -1,0 +1,143 @@
+@charset 'UTF-8';
+.container {
+  width: 1226px;
+  padding: 0;
+}
+#header {
+  border-bottom: 2px solid orangered;
+  height: 100px;
+}
+#header .logo {
+  width: 48px;
+  height: 48px;
+  margin: 26px 45px 0 0;
+  float: left;
+}
+#header .logo .icon {
+  width: 48px;
+  height: 48px;
+}
+#header .text-title {
+  float: left;
+  margin-top: 26px;
+}
+#header .text-title * {
+  float: left;
+}
+#header .text-title p {
+  margin: 20px 0 0 15px;
+  color: #757575;
+  font-size: 12px;
+}
+#header .myinformation {
+  float: right;
+  margin-top: 30px;
+  line-height: 40px;
+  color: #757575;
+}
+#header .myinformation a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 12px;
+}
+#header .myinformation a:hover {
+  color: darkorange;
+}
+main {
+  background-color: #f5f5f5;
+  padding: 38px 0 100px 0;
+}
+main .container.hasgoods {
+  background: white;
+}
+main .container.hasgoods > div {
+  height: 70px;
+}
+main .container.hasgoods > div:not(:first-of-type) {
+  height: 86px !important;
+  line-height: 86px !important;
+}
+main .container.hasgoods > div:not(:first-of-type) > div {
+  height: 86px !important;
+  line-height: 86px !important;
+}
+main .container.hasgoods > div:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+main .container.hasgoods > div > div {
+  float: left;
+  line-height: 70px;
+  font-size: 14px;
+}
+main .container.hasgoods > div > div:first-of-type {
+  width: 110px;
+}
+main .container.hasgoods > div > div:first-of-type input {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  margin-left: 24px;
+  vertical-align: middle;
+}
+main .container.hasgoods > div > div:nth-of-type(2) {
+  width: 120px;
+  height: 100%;
+}
+main .container.hasgoods > div > div:nth-of-type(2) img {
+  width: 80px;
+  height: 80px;
+}
+main .container.hasgoods > div > div:nth-of-type(3) {
+  width: 380px;
+}
+main .container.hasgoods > div > div:nth-of-type(4) {
+  width: 158px;
+  padding-right: 18px;
+}
+main .container.hasgoods > div > div:nth-of-type(5) {
+  width: 150px;
+  text-align: center;
+}
+main .container.hasgoods > div > div:nth-of-type(6) {
+  width: 201px;
+  padding-right: 81px;
+  text-align: right;
+}
+main .container.hasgoods > div > div:nth-of-type(7) {
+  width: 80px;
+  text-align: center;
+}
+main .container.hasgoods > div:first-of-type > div {
+  font-size: 14px;
+}
+main .container.clearfix.empty {
+  display: none;
+}
+main .container.clearfix.empty div {
+  width: 50%;
+  height: 273px;
+  float: left;
+  margin: 65px 0 130px;
+}
+main .container.clearfix.empty div:first-of-type {
+  background: url(../images/cart-empty.png) no-repeat 50%;
+}
+main .container.clearfix.empty div:last-of-type h2 {
+  font-size: 36px;
+  color: #b0b0b0;
+  font-weight: bold;
+  margin-top: 70px;
+}
+main .container.clearfix.empty div:last-of-type button {
+  width: 172px;
+  height: 50px;
+  background: orange;
+  color: white;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  transition: all 0.3s;
+}
+main .container.clearfix.empty div:last-of-type button:hover {
+  background: orangered;
+}

@@ -261,6 +261,7 @@ nav > div.navbar .nav.navbar-right > input[type='submit']:hover {
 .detail-title.one {
   position: fixed;
   top: 0;
+  height: 0;
   background-color: white;
   width: 100%;
   overflow: hidden;
@@ -279,7 +280,6 @@ nav > div.navbar .nav.navbar-right > input[type='submit']:hover {
   margin: 0;
 }
 .detail-title .nav .nav {
-  width: 1006px;
   justify-content: space-between;
   line-height: 60px;
 }

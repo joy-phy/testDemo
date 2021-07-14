@@ -1,7 +1,4 @@
-// import $ from "./library/jquery.js";
-
-
-// console.log($);
+import $ from './library/jquery.js';
 $(function () {
 
 
@@ -33,7 +30,6 @@ $(function () {
 
         // }, 1000);
         $('.remotebanner').children('span').eq(count).addClass('active').siblings().removeClass('active')
-        console.log($('.remotebanner').children('span'))
         return int;
     }
     timer = setInterval(int(), 4600);
@@ -83,7 +79,6 @@ $(function () {
     })
     let translax = 0;
     $('main>section:eq(0)>.row.one p span').on('click', function (ev) {
-        console.log($(ev.target).index());
 
         if ($(ev.target).index()) {
             $('main section > .row.two > .second ul.nav div.nav').css({
@@ -166,7 +161,6 @@ $(function () {
             count = 3
         }
 
-        console.log(count);
     })
     $('.swiper-button-next').on("click", function () {
 
@@ -176,7 +170,6 @@ $(function () {
         timer = setInterval(int(), 4600);
 
 
-        console.log(count);
     })
     $('.fixednav').on('mouseenter', 'li', function () {
         $('.fixednav-right').css({
@@ -188,11 +181,11 @@ $(function () {
         })
 
     })
-    $('.fixednav-right').on('mouseenter','ul',function () {
+    $('.fixednav-right').on('mouseenter', 'ul', function () {
         $(this.parentNode).css({
             display: 'block'
         })
-    }).on('mouseleave', 'ul',function () {
+    }).on('mouseleave', 'ul', function () {
         $(this.parentNode).css({
             display: 'none'
         })
@@ -216,14 +209,14 @@ $(function () {
 
         }
     })
-    $('nav .navbar ul.nav').on('mouseenter','li:lt(7)', function () {
+    $('nav .navbar ul.nav').on('mouseenter', 'li:lt(7)', function () {
         $('nav .navbar ul.nav .navmenu').css({
             height: '230px',
             transition: 'all .3s',
             'box-shadow': ' 0 1px 3px 0 lightgray',
             'border-top': ' 1px solid lightgray'
         })
-    }).on('mouseleave', 'li:lt(7)',function () {
+    }).on('mouseleave', 'li:lt(7)', function () {
         $('nav .navbar ul.nav .navmenu').css({
             height: '0px',
             transition: 'all .3s',
@@ -244,4 +237,29 @@ $(function () {
 
         })
     })
+    $.ajax({
+        type: "get",
+        url: "../../interface/getData.php",
+        dataType: "json",
+
+    }).then(function (data) {
+        data.forEach((el, i) => {
+
+        let picture = JSON.parse(el.picture);
+            $('main>section:eq(1) .clearfix .seco .nav li').eq(i).children('a').children('div').html(`<img src="../${picture[0].src}" alt="">`);
+            $('main>section:eq(1) .clearfix .seco .nav li').eq(i).children('a').attr('href',`./detail.html?item=${el.id}`)
+
+            $('main>section:eq(1) .clearfix .seco .nav li').eq(i).children('a').children('h3').html(el.title);
+            $('main>section:eq(1) .clearfix .seco .nav li').eq(i).children('a').children('p').eq(0).html(el.detail);
+            $('main>section:eq(1) .clearfix .seco .nav li').eq(i).children('a').children('p').eq(1).children('span').html(`${el.price}元起`);
+            $('main>section:eq(1) .clearfix .seco .nav li').eq(i).children('a').children('p').eq(1).children('del').html(`${el.price}元`);
+
+
+
+
+
+        })
+    }).catch(function (xhr) {
+        console.log(xhr.status)
+    });
 })

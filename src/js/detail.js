@@ -1,11 +1,19 @@
-// import $ from "./library/jquery.js";
+import $ from "./library/jquery.js";
+import cookie from "./library/cookie.js";
 
 
 // console.log($);
 $(function () {
+    let c = localStorage.getItem('count');
+    if (c) {
+
+        $('.lastone a i ').html(`(${c})`);
+    }
 
 
 
+
+    let id = location.search.split('=')[1];
 
     let count = 0;
     let timers;
@@ -282,19 +290,114 @@ $(function () {
     $("#removeprevmsg").on('click', function () {
         $(this).parent().remove()
     })
-    window.onmousewheel =(ev)=>{
-        if(document.documentElement.scrollTop>230){
+    window.onmousewheel = (ev) => {
+        if (document.documentElement.scrollTop > 230) {
             $('.detail-title.one').css({
-                height:'60px'
+                height: '60px'
             });
-            
 
-        }else{
+
+        } else {
             $('.detail-title.one').css({
-                height:'0px'
+                height: '0px'
             });
 
         }
     }
+    $.ajax({
+        type: "get",
+        url: "../../interface/getitem.php",
+        data: {
+            id: id
+        },
+        dataType: "json",
+    }).then(function (data) {
+        console.log(JSON.parse(data.picture))
+        JSON.parse(data.picture).forEach((el, i) => {
+            $(`div .wrapper:eq(${i}) a img`).attr('src', `../${el.src}`)
+        });
+        $('.detail-title h2').html(data.title);
+        $('.detail-title .left a').html(data.title);
+        $('.text-top>p').eq(0).html(data.title);
+        $('.text-top>p').eq(1).html(data.detail);
+        $('.text-top>p').eq(3).html(`${data.price}元<del>${data.price}元</del>`);
+        $('.text-bottom div:eq(3) .nav span:eq(0)').html(data.title);
+        $('.text-bottom div:eq(3) .nav span:eq(1)').html(`${data.price}元<del>${data.price}元</del>`);
+        $('.text-bottom div:eq(3)>p:eq(1)').html(`总计:${data.price}元`);
+        $('.addcharcart').on('click', function () {
+            addgoods(data.id, data.price, data.picture, data.title);
+
+        });
+    }).catch(function (xhr) {
+        console.log(xhr.status)
+    });
+
+
+
+    function addgoods(id, price, picture, title) {
+        let shop = cookie.get('shop');
+        let product = {
+            id,
+            price,
+            num: '1',
+            picture: JSON.parse(picture)[0].src,
+            title
+        };
+        if (shop) {
+            shop = JSON.parse(shop);
+            if (shop.some(el => el.id === id)) {
+                let _index = shop.findIndex(elm => elm.id === id);
+
+                shop[_index].num = parseInt(shop[_index].num) + 1;
+
+            } else {
+                shop.push(product)
+            }
+        } else {
+            shop = [];
+            shop.push(product);
+        }
+        cookie.set("shop", JSON.stringify(shop), 1)
+
+    }
+
+
+    let hihi = (function hoho() {
+            let aa = 0;
+
+
+        let a = cookie.get('shop');
+
+        if (a) {
+            a = JSON.parse(a)
+
+            a.forEach(el => {
+                aa += parseInt(el.num)
+            })
+
+        }
+        localStorage.setItem('count', aa);
+
+    })()
+    hihi();
+    $('html').on('click', function () {
+        let b = cookie.get('shop');
+        let count1 = 0;
+        if (b) {
+            b = JSON.parse(b)
+            let count1 = 0;
+
+            b.forEach(el => {
+                count1 += parseInt(el.num)
+            })
+            $('.lastone a i ').html(`(${count1})`);
+            console.log(count1)
+            b = JSON.stringify(b);
+        }
+        hihi();
+
+    })
+
+
 
 })
