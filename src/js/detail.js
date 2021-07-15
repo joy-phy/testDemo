@@ -362,7 +362,7 @@ $(function () {
     }
 
 
-    let hihi = (function hoho() {
+    let hihi = (function () {
             let aa = 0;
 
 
@@ -378,14 +378,14 @@ $(function () {
         }
         localStorage.setItem('count', aa);
 
-    })()
-    hihi();
+    })();
+    hihi;
     $('html').on('click', function () {
         let b = cookie.get('shop');
         let count1 = 0;
         if (b) {
             b = JSON.parse(b)
-            let count1 = 0;
+            count1 = 0;
 
             b.forEach(el => {
                 count1 += parseInt(el.num)
@@ -394,7 +394,7 @@ $(function () {
             console.log(count1)
             b = JSON.stringify(b);
         }
-        hihi();
+        hihi;
 
     })
 

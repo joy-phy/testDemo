@@ -1,4 +1,7 @@
+import $ from "../js/library/jquery.js";
+
 $(function () {
+
     let timer;
     $('.register > div:last-of-type>a:last-of-type').on('mouseenter', function () {
         $(this).addClass('active');
@@ -57,6 +60,7 @@ $(function () {
 
         $(el).children('div:lt(3)').on('click', function (ev) {
             console.log(ev.target.nodeName)
+            // console.log($(this).index())
 
 
             if (ev.target.nodeName.toLowerCase() == 'label' && !($(ev.target).parent().children('input').index() >= 0)) {
@@ -71,10 +75,12 @@ $(function () {
 
                 })
                 if ($(this).index() / 2 == 1) {
-                    $(`<input type="password" id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;">`).appendTo($(ev.target).parent())
-                } else {
+                    $(`<input name="password" type="password" id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;">`).appendTo($(ev.target).parent())
+                } else if ($(this).index() / 2 == 0) {
 
-                    $(`<input type="email" id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;">`).appendTo($(ev.target).parent())
+                    $(`<input name="username" type="email" id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;">`).appendTo($(ev.target).parent())
+                } else if ($(this).index() / 2 == 2) {
+                    $(`<input name="text" type="email" id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;">`).appendTo($(ev.target).parent())
                 }
                 $(ev.target).parent().css({
                     border: '1px solid orangered ',
@@ -89,7 +95,7 @@ $(function () {
 
                             let i = $(this).parent().children('input').val();
                             $(this).parent().children('input').remove();
-                            $(`<input type="text" value="${i}"  id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;background:rgb(249, 249, 249)">`).appendTo($(this).parent())
+                            $(`<input name="password" type="text" value="${i}"  id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;background:rgb(249, 249, 249)">`).appendTo($(this).parent())
                         }
                     } else {
                         $(this).addClass('icon-yanjing').removeClass('icon-yanjing1');
@@ -97,7 +103,7 @@ $(function () {
 
                             let i = $(this).parent().children('input').val();
                             $(this).parent().children('input').remove();
-                            $(`<input type="password" value="${i}"  id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;background:rgb(249, 249, 249)">`).appendTo($(this).parent())
+                            $(`<input name="password" type="password" value="${i}"  id="d${$(this).index()/2}" style="font-size:17px; display:block;margin-left:20px ;outline:none;border:none;background:rgb(249, 249, 249)">`).appendTo($(this).parent())
 
                         }
 

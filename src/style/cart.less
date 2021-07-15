@@ -192,3 +192,244 @@ main {
         }
     }
 }
+
+footer {
+    a {
+        text-decoration: none;
+        color: #757575;
+        font-size: 12px;
+
+        &:hover {
+            color: darkorange;
+        }
+    }
+
+    .linkbar {
+        padding: 40px 0;
+
+        &>ul {
+            padding: 0;
+            list-style: none;
+            float: left;
+            width: 160px;
+
+            &:last-of-type {
+                margin: -1px 0 26px;
+                font-size: 14px;
+                float: right;
+                width: 252px;
+                text-align: center;
+                border-left: 1px solid #e0e0e0;
+
+
+                li:first-of-type {
+                    color: #ff6700;
+                    font-size: 22px;
+                    margin: 0;
+                }
+
+                li:nth-of-type(3) {
+                    a {
+                        display: block;
+                        width: 120px;
+                        height: 30px;
+                        border: 1px solid darkorange;
+                        line-height: 30px;
+                        color: darkorange;
+                        margin: auto;
+
+                        &:hover {
+                            color: white;
+                            background-color: darkorange;
+                            transition: all .3s;
+
+                        }
+
+                        transition: all .3s;
+                    }
+                }
+
+                .binacode {
+                    width: 126px;
+                    height: 126px;
+                    display: none;
+                    position: absolute;
+                    left: calc(50% - 58px);
+                }
+
+
+            }
+
+            li {
+                position: relative;
+
+                &:first-of-type {
+                    margin: -1px 0 26px;
+                    font-size: 14px;
+
+
+                }
+
+
+                a {
+                    color: #757575;
+
+                    &:hover {
+                        color: darkorange;
+                    }
+                }
+
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .service {
+
+        padding: 27px 0;
+        border-bottom: 1px solid #e0e0e0;
+
+        ul {
+            list-style: none;
+            display: flex;
+            height: 25px;
+
+            li {
+
+                width: (100%/5);
+
+                &:not(:last-of-type) {
+                    border-right: 1px solid #e0e0e0;
+                }
+
+                a {
+                    &:hover {
+                        color: darkorange;
+                    }
+
+                    justify-content: center;
+                    height: 25px;
+                    align-items: flex-start;
+                    color: #616161;
+
+                    span {
+                        font-size: 24px;
+                        line-height: 24px;
+
+                    }
+
+                    display: flex;
+
+                    h3 {
+                        font-size: 18px;
+                        font-weight: lighter;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+
+    &:hover {
+        position: relative;
+        left: 0.5px;
+    }
+}
+
+.final {
+    a {
+        text-decoration: none;
+        color: #757575;
+        font-size: 12px;
+
+        &:hover {
+            color: darkorange;
+        }
+    }
+
+    background: #fafafa;
+    padding: 30px 0;
+
+    .container.one {
+
+        position: relative;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .boon {
+        height: 19px;
+        margin-top: 30px;
+        background: url(../images/发烧而生.png) no-repeat center;
+    }
+
+    .phtext {
+        padding-left: 67px;
+
+        img {
+            margin-bottom: 15px;
+            width: 83px;
+        }
+    }
+
+    .logo {
+        top: 0;
+        left: 0;
+        width: 56px;
+        height: 56px;
+        margin-right: 10px;
+        position: absolute;
+
+    }
+
+    .text {
+        a:hover {
+            color: darkorange;
+        }
+
+        p:nth-of-type(3),
+        p:nth-of-type(4),
+        p:nth-of-type(5),
+        p:nth-of-type(6) {
+            color: #b0b0b0;
+
+            a {
+                &:hover {
+                    color: darkorange;
+                }
+
+                color: #b0b0b0;
+
+            }
+        }
+
+
+        line-height: 18px;
+        color: #757575;
+
+
+        font-size: 12px;
+
+        a {
+            color: #757575;
+
+
+        }
+
+        padding-left: 67px;
+
+
+    }
+}

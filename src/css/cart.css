@@ -141,3 +141,182 @@ main .container.clearfix.empty div:last-of-type button {
 main .container.clearfix.empty div:last-of-type button:hover {
   background: orangered;
 }
+footer a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 12px;
+}
+footer a:hover {
+  color: darkorange;
+}
+footer .linkbar {
+  padding: 40px 0;
+}
+footer .linkbar > ul {
+  padding: 0;
+  list-style: none;
+  float: left;
+  width: 160px;
+}
+footer .linkbar > ul:last-of-type {
+  margin: -1px 0 26px;
+  font-size: 14px;
+  float: right;
+  width: 252px;
+  text-align: center;
+  border-left: 1px solid #e0e0e0;
+}
+footer .linkbar > ul:last-of-type li:first-of-type {
+  color: #ff6700;
+  font-size: 22px;
+  margin: 0;
+}
+footer .linkbar > ul:last-of-type li:nth-of-type(3) a {
+  display: block;
+  width: 120px;
+  height: 30px;
+  border: 1px solid darkorange;
+  line-height: 30px;
+  color: darkorange;
+  margin: auto;
+  transition: all 0.3s;
+}
+footer .linkbar > ul:last-of-type li:nth-of-type(3) a:hover {
+  color: white;
+  background-color: darkorange;
+  transition: all 0.3s;
+}
+footer .linkbar > ul:last-of-type .binacode {
+  width: 126px;
+  height: 126px;
+  display: none;
+  position: absolute;
+  left: calc(50% - 58px);
+}
+footer .linkbar > ul li {
+  position: relative;
+  font-size: 12px;
+  margin-top: 10px;
+}
+footer .linkbar > ul li:first-of-type {
+  margin: -1px 0 26px;
+  font-size: 14px;
+}
+footer .linkbar > ul li a {
+  color: #757575;
+}
+footer .linkbar > ul li a:hover {
+  color: darkorange;
+}
+footer .service {
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+footer .service ul {
+  list-style: none;
+  display: flex;
+  height: 25px;
+}
+footer .service ul li {
+  width: 20%;
+}
+footer .service ul li:not(:last-of-type) {
+  border-right: 1px solid #e0e0e0;
+}
+footer .service ul li a {
+  justify-content: center;
+  height: 25px;
+  align-items: flex-start;
+  color: #616161;
+  display: flex;
+}
+footer .service ul li a:hover {
+  color: darkorange;
+}
+footer .service ul li a span {
+  font-size: 24px;
+  line-height: 24px;
+}
+footer .service ul li a h3 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.icon {
+  width: 56px;
+  height: 56px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.icon:hover {
+  position: relative;
+  left: 0.5px;
+}
+.final {
+  background: #fafafa;
+  padding: 30px 0;
+}
+.final a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 12px;
+}
+.final a:hover {
+  color: darkorange;
+}
+.final .container.one {
+  position: relative;
+}
+.final p {
+  margin: 0;
+}
+.final .boon {
+  height: 19px;
+  margin-top: 30px;
+  background: url(../images/发烧而生.png) no-repeat center;
+}
+.final .phtext {
+  padding-left: 67px;
+}
+.final .phtext img {
+  margin-bottom: 15px;
+  width: 83px;
+}
+.final .logo {
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+  position: absolute;
+}
+.final .text {
+  line-height: 18px;
+  color: #757575;
+  font-size: 12px;
+  padding-left: 67px;
+}
+.final .text a:hover {
+  color: darkorange;
+}
+.final .text p:nth-of-type(3),
+.final .text p:nth-of-type(4),
+.final .text p:nth-of-type(5),
+.final .text p:nth-of-type(6) {
+  color: #b0b0b0;
+}
+.final .text p:nth-of-type(3) a,
+.final .text p:nth-of-type(4) a,
+.final .text p:nth-of-type(5) a,
+.final .text p:nth-of-type(6) a {
+  color: #b0b0b0;
+}
+.final .text p:nth-of-type(3) a:hover,
+.final .text p:nth-of-type(4) a:hover,
+.final .text p:nth-of-type(5) a:hover,
+.final .text p:nth-of-type(6) a:hover {
+  color: darkorange;
+}
+.final .text a {
+  color: #757575;
+}

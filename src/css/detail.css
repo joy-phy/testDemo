@@ -100,7 +100,7 @@ header .lastone {
   margin-left: 15px;
   position: relative;
 }
-header .lastone div {
+header .lastone > div {
   position: absolute;
   top: 97%;
   right: 0;
@@ -113,7 +113,7 @@ header .lastone div {
   background-color: white;
   box-shadow: 0 10px 10px 1px lightgray;
 }
-header .lastone:hover div {
+header .lastone:hover > div {
   height: auto;
   transition: all 0.3s;
   padding: 20px 0;
