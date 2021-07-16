@@ -1,6 +1,7 @@
 <?php
 
 // 2.连接数据库
+header("Content-Type: text/html; charset=UTF-8");
 include('./library/conn.php'); // 导入文件
 
 // 注册的逻辑
@@ -40,8 +41,8 @@ $result = $mysqli->query($insert); // 返回布尔值
 $mysqli->close();
 
 if ($result) {
-    echo '<script>alert("注册成功");
-    location.href="../src/html/index.html"
+    echo '<script>alert("注册成功,去登陆吧");
+    location.href="../src/html/regitser.html"
     </script>';
     die();
 }

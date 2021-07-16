@@ -1,0 +1,372 @@
+@charset 'UTF-8';
+.bac {
+  width: 375px;
+  background: url(../images/登录及注册背景图.jpg) no-repeat center center / cover;
+}
+a {
+  text-decoration: none;
+}
+.row {
+  --bs-gutter-x: 0;
+}
+.register {
+  line-height: 40px;
+  padding: 20px;
+  width: 100%;
+  float: left;
+}
+.register a {
+  color: #838383;
+  font-size: 13px;
+}
+.register a:hover {
+  color: darkorange;
+}
+.register > div:first-of-type {
+  float: left;
+}
+.register > div:last-of-type {
+  float: right;
+  color: #838383;
+  position: relative;
+}
+.register > div:last-of-type ul {
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 15px;
+  text-align: center;
+  box-shadow: 0 0 5px 0 lightgray;
+}
+.register > div:last-of-type ul li {
+  box-sizing: border-box;
+  padding: 9px 14px;
+  line-height: 14px;
+}
+.register > div:last-of-type ul li a {
+  font-size: 14px;
+  margin: 0 !important;
+}
+.register > div:last-of-type a {
+  margin: 0 10px;
+}
+.register > div:last-of-type a:last-of-type {
+  position: relative;
+  margin-right: 25px;
+}
+.register > div:last-of-type a:last-of-type.active {
+  color: darkorange;
+}
+.register > div:last-of-type a:last-of-type.active span {
+  display: inline-block;
+  line-height: 40px;
+  vertical-align: middle;
+  border-top: 5px solid darkorange;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  transform: rotate(180deg);
+  margin: 0;
+  transition: all 0.3s;
+}
+.register > div:last-of-type a:last-of-type span {
+  display: inline-block;
+  line-height: 40px;
+  vertical-align: middle;
+  border-top: 5px solid #838383;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  margin: 0;
+  transition: all 0.3s;
+}
+.register h1 {
+  font-size: 26px;
+  line-height: 40px;
+}
+.mi-account {
+  box-sizing: border-box;
+  width: 75%;
+}
+.mi-account > div:last-of-type {
+  font-size: 12px;
+  height: 40px;
+  color: #999;
+  text-align: center;
+}
+.mi-account > div:last-of-type a {
+  color: #999;
+}
+.mi-account > .container {
+  padding-top: 20px;
+}
+.mi-account > .container > .box {
+  margin: 0 auto 80px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  width: 450px;
+  padding: 40px 45px;
+  box-shadow: 0 0 10px 0 lightgray;
+}
+.mi-account > .container > .box input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 18px;
+  background-color: gray;
+}
+.mi-account > .container > .box > p#first-con:first-of-type {
+  height: 40px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.mi-account > .container > .box > p#first-con:first-of-type > i {
+  content: '';
+  height: 4px;
+  width: 44px;
+  background-color: orangered;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.mi-account > .container > .box > p#first-con:first-of-type a {
+  font-size: 22px;
+  color: #bbb;
+  margin-right: 20px;
+}
+.mi-account > .container > .box > p#first-con:first-of-type a.active {
+  color: #333;
+  font-weight: bold;
+}
+.mi-account > .container > .box > div.nav {
+  flex-wrap: nowrap;
+}
+.mi-account > .container > .box > p#first-con:first-of-type {
+  height: 40px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.mi-account > .container > .box > p#first-con:first-of-type > i {
+  content: '';
+  height: 4px;
+  width: 44px;
+  background-color: orangered;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.mi-account > .container > .box > p#first-con:first-of-type a {
+  font-size: 22px;
+  color: #bbb;
+  margin-right: 20px;
+}
+.mi-account > .container > .box > p#first-con:first-of-type a.active {
+  color: #333;
+  font-weight: bold;
+}
+.mi-account > .container > .box .tab-list {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 50px;
+}
+.mi-account > .container > .box .tab-list .password {
+  position: relative;
+}
+.mi-account > .container > .box .tab-list .password label {
+  width: 304px;
+}
+.mi-account > .container > .box .tab-list .password i {
+  right: 0;
+  top: 0;
+  display: block;
+  height: 60px;
+  width: 60px;
+  padding: 10px 0;
+  position: absolute;
+}
+.mi-account > .container > .box .tab-list .password i.iconfont {
+  font-size: 28px;
+}
+.mi-account > .container > .box .tab-list a {
+  color: black;
+}
+.mi-account > .container > .box .tab-list > div {
+  overflow: hidden;
+}
+.mi-account > .container > .box .tab-list > div > label {
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.2s;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 17px;
+}
+.mi-account > .container > .box .tab-list > span {
+  font-size: 12px;
+  margin-top: 10px;
+  display: none;
+  color: orangered;
+}
+.mi-account > .container > .box .tab-list > div:nth-of-type(2) {
+  margin-top: 20px;
+  width: 364px;
+  height: 60px;
+  margin-bottom: 27.6px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+.mi-account > .container > .box .tab-list > div:nth-of-type(2) p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 17px;
+}
+.mi-account > .container > .box .tab-list > div:nth-of-type(4) {
+  margin-top: 20px;
+  width: 364px;
+  height: 60px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+.mi-account > .container > .box .tab-list > div:nth-of-type(4) > button {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(255, 102, 0, 0.5);
+  transition: all 0.3s;
+}
+.mi-account > .container > .box .tab-list > div:nth-of-type(4) > button:hover {
+  background-color: rgba(255, 102, 0, 0.4);
+  transition: all 0.3s;
+}
+.mi-account > .container > .box .tab-list > div:nth-of-type(3) {
+  margin-top: 20px;
+  width: 364px;
+  height: 60px;
+  margin-bottom: 27.6px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  position: relative;
+}
+.mi-account > .container > .box .tab-list > div:nth-of-type(3) label {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 17px;
+  width: 232px;
+  margin: 0;
+  display: inline-block;
+}
+.mi-account > .container > .box .tab-list > div:nth-of-type(3) button {
+  color: orangered;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+}
+.mi-account > .container > .box .tab-list > div:first-of-type {
+  margin-top: 20px;
+  width: 364px;
+  height: 60px;
+  margin-bottom: 27.6px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+.mi-account > .container > .box .tab-list > div:first-of-type p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 17px;
+}
+.mi-account > .container > .box .tab-list > p:last-of-type {
+  width: 360px;
+  height: 40px;
+  margin: 10px 0;
+  font-size: 17px;
+  text-align: center;
+  line-height: 40px;
+}
+.mi-account > .container > .box .tab-list > div:last-of-type {
+  padding: 0 50px;
+  justify-content: space-around;
+}
+.mi-account > .container > .box .tab-list #question {
+  color: orangered;
+  margin: 10px 0;
+  display: block;
+}
+.mi-account > .container > .box > .binacode {
+  transition: all 0.3s;
+  cursor: pointer;
+  border-top: 32px solid #FFBE99;
+  border-bottom: 32px solid white;
+  border-left: 32px solid white;
+  border-right: 32px solid #FFBE99;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mi-account > .container > .box > .binacode i {
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+}
+.mi-account > .container > .box > .binacode::before {
+  content: '扫码登录';
+  color: white;
+  background-color: orangered;
+  width: 86px;
+  display: block;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  position: absolute;
+  top: -14px;
+  transform: scale(1);
+  left: -128px;
+  opacity: 0;
+  transition: all cubic-bezier(0.64, 0.46, 0.89, 1.51) 0.3s;
+}
+.mi-account > .container > .box > .binacode::after {
+  content: '';
+  display: block;
+  background-color: orangered;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: -50px;
+  top: -7px;
+  transform: scale(1);
+  display: none;
+  opacity: 0;
+  transition: all cubic-bezier(0.64, 0.46, 0.89, 1.51) 0.3s;
+}
+.mi-account > .container > .box > .binacode:hover {
+  border-top-color: orangered;
+  border-right-color: orangered;
+  transition: all cubic-bezier(0.64, 0.46, 0.89, 1.51) 0.3s;
+}
+.mi-account > .container > .box > .binacode:hover::after {
+  display: block;
+  opacity: 1;
+  transform: rotate(45deg) scale(1.1);
+  transition: all 0.3s cubic-bezier(0.64, 0.46, 0.89, 1.51);
+}
+.mi-account > .container > .box > .binacode:hover::before {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.64, 0.46, 0.89, 1.51);
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin-right: 10px;
+}

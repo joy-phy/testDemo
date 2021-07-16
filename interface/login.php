@@ -4,6 +4,7 @@
     // 3. 查询用户名和密码是否匹配
     // 查询到结果 表示 登陆成功
     // 没有查询结果 表示 登陆失败
+    header("Content-Type: text/html; charset=UTF-8");
 
     include('./library/conn.php');
 
@@ -17,7 +18,12 @@
 
 
     if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        setrawcookie('username', $row['username'], time() + 3600 * 24, '/');
+        setcookie('isLogined', 'true', time() + 3600 * 24, '/');
         echo '<script>alert("登陆成功");</script>';
+        echo '<script>location.href="../src/html/index.html";</script>';
+
         $mysqli->close();
     } else {
         if ($res1->num_rows > 0) {
@@ -27,5 +33,6 @@
         } else {
             echo '<script>alert("用户名错误，注册一个吧");</script>';
             echo '<script>location.href="../src/html/regitser.html";</script>';
+            $mysqli->close();
         }
     }
